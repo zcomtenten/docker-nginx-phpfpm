@@ -28,3 +28,4 @@ nginx_port_checker
 nginx_docker_name_random
 cp -r core $nginx_creat_name
 sed -i "s/8080/$port/g" $nginx_creat_name/docker-compose.yml
+docker-compose -f $nginx_creat_name/docker-compose.yml up -d
